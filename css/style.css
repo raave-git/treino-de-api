@@ -12,7 +12,7 @@
     color: var(--cor-de-texto);
 }
 
-/* Mensagem: */
+/* campos de alerta: */
 #fade {
     position: fixed;
     top: 0;
@@ -42,4 +42,53 @@
 .alert.alert-light p {
     border-bottom: 1px solid #333;
     padding: 1em 0;
+}
+
+/* passos: */
+#order-form-container {
+    padding: 1.5em;
+}
+
+#steps {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-das-bordas);
+    position: relative;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step i {
+    background-color: var(--cor-secundaria-de-fundo);
+    color: var(--cor-do-texto);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 1.2.em;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.step .active {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.step p {
+    color: var(--cor-do-texto);
+}
+
+.line {
+    border-bottom: 1px solid var(--cor-das-bordas);
+    position: absolute;
+    top: 22.5px;
+    width: 90%;
+    left: 5%;
+    z-index: -1;
 }
