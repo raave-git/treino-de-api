@@ -1,15 +1,22 @@
 :root {
-    --cor-do-fundo: #04044c;
-    --cor-secundaria-de-fundo: #393a7d;
+    --cor-do-fundo: linear-gradient(90deg, rgba(6,222,255,1) 0%, rgba(9,70,121,1) 25%, rgba(2,92,55,0.9429971817828694) 100%);
+    --cor-secundaria-de-fundo: #292826;
     --cor-primaria: #fff;
-    --cor-secundaria: #25cc88;
-    --cor-do-texto: #8789af;
-    --cor-das-bordas: #20235b;
+    --cor-secundaria: rgba(242, 78, 235, 0.3);
+    --cor-do-texto: #d3c0ee;
+    --cor-das-bordas: #d3c0ee;
 }
 
 #pagina-de-endereco {
-    background-color: var(--cor-do-fundo);
-    color: var(--cor-de-texto);
+    background-image: url("pexels.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--cor-primaria);
+}
+
+#cadastro {
+    font-size: 20px;
+    padding: 10px 0;
 }
 
 /* campos de alerta: */
@@ -39,14 +46,31 @@
     width: 30%;
 }
 
+.alert.alert-light {
+    background: rgba(255, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    color: white;
+}
 .alert.alert-light p {
-    border-bottom: 1px solid #333;
-    padding: 1em 0;
+    padding: 0 0 8px 0;
+    margin: 0;
 }
 
-/* passos: */
-#order-form-container {
-    padding: 1.5em;
+#msg-tit{
+    font-size: 16px;
+}
+
+#fechar-msg {
+    background: rgba(255, 0, 0, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 #steps {
@@ -65,7 +89,6 @@
 
 .step i {
     background-color: var(--cor-secundaria-de-fundo);
-    color: var(--cor-do-texto);
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -77,7 +100,6 @@
 
 .step .active {
     background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
 }
 
 .step p {
@@ -92,3 +114,113 @@
     left: 5%;
     z-index: -1;
 }
+
+#vidro {
+    background: rgba(242, 78, 235, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(242, 78, 235, 0.3);
+    max-width: 750px;
+    display: block;
+    margin: auto auto;
+    margin-top: 75px;
+}
+
+/* cabeçalho do formulário: */
+/* #form-header {
+    
+} */
+
+/* formulário: */
+#order-form-container {
+    padding: 1.5em;
+    max-width: 700px;
+}
+
+#order-form-container input, 
+#order-form-container select {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(0, 0, 0, 0.62);
+    color: white;
+}
+
+#order-form-container select {
+    padding: 1rem 0.75rem;
+  }
+  
+#order-form-container label {
+    color: var(--cor-do-texto);
+    left: 0.75em;
+}
+
+#order-form-container input:disabled,
+#order-form-container select:disabled {
+    background: rgba(228, 228, 228, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(228, 228, 228, 0.3);
+    color: var(--cor-do-texto);
+}
+
+#order-form-container input:focus {
+    border-color: var(--cor-secundaria);
+}
+
+#save-btn {
+    background: rgba(242, 78, 235, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(242, 78, 235, 0.3);
+    width: 10em;
+    height: 58px;
+    color: var(--cor-do-texto);
+    border-radius: 16px;
+}
+
+#salvo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6); /* o 'a' representa a opacidade da cor, entretanto, ou contrário do 'opacity', os elementos na frente do que recebe a valor não é afetado*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#salvar_msg {
+    width: 30%;
+}
+
+#salvar_msg .alert.alert-light {
+    background: rgba(0, 255, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: white;
+}
+
+#ok {
+    background: rgba(0, 255, 0, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(0, 255, 34, 0.3);
+}
+
