@@ -8,9 +8,10 @@
 }
 
 #pagina-de-endereco {
-    background-image: url("pexels.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    height: 100vh;
     color: var(--cor-primaria);
 }
 
@@ -116,12 +117,12 @@
 }
 
 #vidro {
-    background: rgba(242, 78, 235, 0.18);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(242, 78, 235, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     max-width: 750px;
     display: block;
     margin: auto auto;
@@ -142,12 +143,12 @@
 #order-form-container input, 
 #order-form-container select {
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.32);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.1px);
-    -webkit-backdrop-filter: blur(7.1px);
-    border: 1px solid rgba(0, 0, 0, 0.62);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
     color: white;
 }
 
@@ -162,12 +163,12 @@
 
 #order-form-container input:disabled,
 #order-form-container select:disabled {
-    background: rgba(228, 228, 228, 0.12);
+    background: rgba(173, 173, 173, 0.14);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(228, 228, 228, 0.3);
+    border: 1px solid rgba(173, 173, 173, 0.23);
     color: var(--cor-do-texto);
 }
 
@@ -239,3 +240,14 @@
     border: 1px solid rgba(0, 183, 255, 0.3);
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
