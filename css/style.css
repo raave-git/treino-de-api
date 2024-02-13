@@ -1,13 +1,13 @@
 :root {
     --cor-secundaria-de-fundo: #292826;
     --cor-primaria: #fff;
-    --cor-secundaria: rgba(242, 78, 235, 0.3);
+    --cor-secundaria: rgba(0, 0, 0, 0.5);
     --cor-do-texto: #5e5e5e;
     --cor-das-bordas: #d3c0ee;
 }
 
 #pagina-de-endereco {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-30deg, #ff0000bb, #ff7214, #23a6d5, #9d09ff);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     height: 100vh;
