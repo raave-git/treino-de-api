@@ -1,9 +1,8 @@
 :root {
-    --cor-do-fundo: linear-gradient(90deg, rgba(6,222,255,1) 0%, rgba(9,70,121,1) 25%, rgba(2,92,55,0.9429971817828694) 100%);
     --cor-secundaria-de-fundo: #292826;
     --cor-primaria: #fff;
     --cor-secundaria: rgba(242, 78, 235, 0.3);
-    --cor-do-texto: #d3c0ee;
+    --cor-do-texto: #5e5e5e;
     --cor-das-bordas: #d3c0ee;
 }
 
@@ -117,12 +116,12 @@
 }
 
 #vidro {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.32);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     max-width: 750px;
     display: block;
     margin: auto auto;
@@ -142,14 +141,13 @@
 
 #order-form-container input, 
 #order-form-container select {
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.32);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.23);
-    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgb(51, 51, 51);
 }
 
 #order-form-container select {
@@ -163,12 +161,12 @@
 
 #order-form-container input:disabled,
 #order-form-container select:disabled {
-    background: rgba(173, 173, 173, 0.14);
+    background: rgba(255, 255, 255, 0.14);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(173, 173, 173, 0.23);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--cor-do-texto);
 }
 
@@ -177,15 +175,15 @@
 }
 
 #save-btn {
-    background: rgba(242, 78, 235, 0.32);
+    background: rgba(28, 226, 81, 0.48);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(242, 78, 235, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(28, 226, 81, 0.48);
     width: 10em;
     height: 58px;
-    color: var(--cor-do-texto);
+    color: rgb(51, 51, 51);
     border-radius: 16px;
 }
 
