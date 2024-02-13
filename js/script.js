@@ -17,6 +17,9 @@ const entradas = document.querySelectorAll('[data-input]');
 
 const fechar_bt = document.querySelector('#fechar-msg');
 
+const salvar_e_continuar = document.querySelector('#salvo');
+const caixa = document.querySelector('#salvar_msg');
+
 // validar entrada digitada no campo cep:
 cep_in.addEventListener('keypress',(e)=>{ //tenho acesso ao evento escutado por meio do primeiro argumento, aqui, o "e".
     const somente_numeros = /[0-9]/;
@@ -109,24 +112,20 @@ const interruptor_de_edicao = ()=>{
     };
 };
 
-const salvo = (msg)=>{
-    const salvar = document.querySelector('#salvo');
-    const caixa = document.querySelector('#salvar_msg');
-
-    const corpo = document.querySelector('#texto_salvo');
-
-    corpo.innerHTML = msg;
-
-        salvar.classList.toggle('esconder');
-        caixa.classList.toggle('esconder');
-};
-
 formulario_de_endereco.addEventListener('submit',(e)=>{
     e.preventDefault();
-
+    
     interruptor_de_carregamento();
-        setTimeout(() => {
+    setTimeout(() => {
+        const corpo = document.getElementById('texto_salvo').innerHTML = 'As informações foram salvas com sucesso.<br>Pressione <strong>Continuar</strong> para seguir em frente.';
+        salvar_e_continuar.classList.toggle('esconder');
+        caixa.classList.toggle('esconder');
+
             interruptor_de_carregamento();
-            salvo('As informações foram salvas com sucesso. <br>Pressione o botão para serguirmos em frente.');
-        }, 1500);
+    }, 1500);
 })
+
+const voltar = document.getElementById('voltar').addEventListener('click',()=>{
+    salvar_e_continuar.classList.toggle('esconder');
+    caixa.classList.toggle('esconder');
+});

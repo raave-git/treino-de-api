@@ -222,5 +222,20 @@
     backdrop-filter: blur(6.4px);
     -webkit-backdrop-filter: blur(6.4px);
     border: 1px solid rgba(0, 255, 34, 0.3);
+    margin-right: 10px;
+}
+
+#ok a {
+    text-decoration: unset !important; 
+    color: white;
+}
+
+#voltar {
+    background: rgba(0, 162, 255, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(0, 183, 255, 0.3);
 }
 
